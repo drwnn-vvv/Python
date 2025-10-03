@@ -1,0 +1,16 @@
+X = []
+
+valor= int(input())
+conta = valor - valor
+if 2 <= valor <= 50:
+    for i in range(1000):
+        for i in range(valor):
+            X.append(conta)
+            conta = conta + 1
+            if conta == valor:
+                conta = 0
+
+
+for i in range(1000):
+    if X[i] < valor:
+        print(f'N[{i}] = {X[i]}')
